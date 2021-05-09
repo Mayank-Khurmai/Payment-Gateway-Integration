@@ -14,7 +14,7 @@ body{
 
 .button-box{
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -23,5 +23,13 @@ body{
     background-color:brown;
     padding: 10px;
     font-size: large;
+    font-weight: bold;
+    color: wheat;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+#donate_button:hover{
+    border-radius: 15px;
+    box-shadow: cadetblue;
 }
