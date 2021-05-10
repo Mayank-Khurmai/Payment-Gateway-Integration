@@ -3,11 +3,21 @@
     <head>
         <title>Mayank Khurmai</title>
         <link href="style.css" rel="stylesheet">
+        <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+      function onButtonClick() {
+        Instamojo.open('https://test.instamojo.com/@mayankkhurmai8');
+      }
+    </script> 
     </head>
     <body>
         <div class="button-box">
             <button id="donate_button">Click to Donate</button>
             <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H8yg3duqZrQAcO" async> </script> </form>
-        </div>
+            <button id="insta_button" onclick="onButtonClick()">
+                Instapay
+              </button>
+            </div>
+
     </body>
 </html>
