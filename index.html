@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Mayank Khurmai</title>
-        <link href="style.css" rel="stylesheet">
-        <script src="https://js.instamojo.com/v1/checkout.js"></script>
-    <script>
-      function onButtonClick() {
-        Instamojo.open('https://test.instamojo.com/@mayankkhurmai8');
-      }
-    </script> 
-    </head>
-    <body>
-        <div class="button-box">
-            <button id="donate_button">Click to Donate</button>
-            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H8yg3duqZrQAcO" async> </script> </form>
-            <button id="insta_button" onclick="onButtonClick()">
-                Instapay
-              </button>
-            </div>
 
-    </body>
+<head>
+    <title>Mayank Khurmai</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+        function onButtonClick() {
+            Instamojo.open('https://test.instamojo.com/@mayankkhurmai8');
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="button-box border">
+        <div id="btn-primary" onclick="pay_in()">
+            <button id="donate_button">Click to Donate</button>
+        </div>
+        <div id="btn-secondary">
+            <div>
+                <form>
+                    <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H8yg3duqZrQAcO"
+                        async> </script>
+                </form>
+            </div>
+            <div>
+                <button class="btn btn-primary px-4" onclick="onButtonClick()">
+                    Instapay
+                </button>
+            </div>
+        </div>   
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
