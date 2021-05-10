@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
-*{
+*
+{
     box-sizing: border-box;
 }
 
-body{
+
+body
+{
     position: relative;
     height: 100vh;
     padding: 0%;
@@ -14,14 +17,16 @@ body{
     background-position: center;
 }
 
-.button-box{
+.button-box
+{
     position: absolute;
     top: 47%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-#donate_button{
+#donate_button
+{
     background-color:brown;
     padding: 10px;
     font-size: large;
@@ -31,18 +36,40 @@ body{
     border-radius: 10px;
 }
 
-#donate_button:hover{
+#donate_button:hover
+{
     border-radius: 15px;
     box-shadow: cadetblue;
 }
 
-#btn-secondary{
+#btn-secondary
+{
     display: none;
     background-color: rgba(134, 86, 86,0.5);
     padding: 25px;
     border-radius: 5px;
 }
 
-.insta_btn{
+.insta_btn
+{
     width: 100%;
+}
+
+#fa-icon
+{
+    color: white;
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 0;
+    cursor: pointer;
+    right: 0;
+}
+
+#logo
+{
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    /* border-radius: 50%; */
 }

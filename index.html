@@ -11,13 +11,16 @@
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <img src="https://media-exp1.licdn.com/dms/image/C560BAQFgHU3sTF4LfQ/company-logo_200_200/0/1519895156650?e=1628726400&v=beta&t=GXk7tThn8M84817A2R8mDVj600i173_zvsIgCWOqo9k" id="logo">
     <div class="button-box">
         <div id="btn-primary" onclick="pay_in()">
             <button id="donate_button">Click to Donate</button>
         </div>
         <div id="btn-secondary">
+            <i class="fa fa-times" id="fa-icon" onclick="pay_out()"></i>
             <div>
                 <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H8yg3duqZrQAcO" async> </script></form>
             </div>
