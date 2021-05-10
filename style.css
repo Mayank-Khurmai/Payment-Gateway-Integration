@@ -33,3 +33,7 @@ body{
     border-radius: 15px;
     box-shadow: cadetblue;
 }
+
+#btn-secondary{
+    display: none;
+}
